@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <form id="form">
+      <label>
+        startX
+        <input type="number" name="startX" id="x1" required />
+      </label>
+      <label>
+        startY
+        <input type="number" name="startY" id="y1" required />
+      </label>
+      <label>
+        endX
+        <input type="number" name="endX" id="x2" required />
+      </label>
+      <label>
+        endY
+        <input type="number" name="endY" id="y2" required />
+      </label>
+      <button type="submit">Додати відрізок</button>
+    </form>
+    <p id="message"></p>
+    <script type="module" src="./dist/index.js"></script>
+  </body>
+</html>

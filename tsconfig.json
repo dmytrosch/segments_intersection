@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "sourceMap": true,
+    "strict": true,
+    "module": "ESNext",
+    "outDir": "dist/",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "*.js"]
+    }
+  },
+  "noImplicitAny": true
+}
