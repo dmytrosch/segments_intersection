@@ -70,6 +70,8 @@ class Canvas {
         if (this.points.length === 1) {
             this.x1Input.value = String(point.x);
             this.y1Input.value = String(point.y);
+            this.x2Input.value = "";
+            this.y2Input.value = "";
             return;
         }
         this.x2Input.value = String(point.x);
