@@ -173,7 +173,6 @@ class Canvas {
       this.segments[0] = segment;
     } else {
       this.segments[1] = segment;
-      console.log(this.segments);
 
       const message = segment.intersects(this.segments[0]);
       this.messageRef.innerHTML = message;

@@ -20,7 +20,6 @@ class LineSegment {
         this.FC = p1.y * (p2.x - p1.x) - p1.x * (p2.y - p1.y);
     }
     intersects(segment) {
-        // Check if the two segments lie on the same line
         if (this.FA * segment.FB === this.FB * segment.FA) {
             if (this.FC === segment.FC) {
                 return "Відрізки накладаються";
@@ -116,7 +115,6 @@ class Canvas {
         }
         else {
             this.segments[1] = segment;
-            console.log(this.segments);
             const message = segment.intersects(this.segments[0]);
             this.messageRef.innerHTML = message;
         }
